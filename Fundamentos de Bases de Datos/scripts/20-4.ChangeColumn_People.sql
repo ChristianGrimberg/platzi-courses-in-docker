@@ -1,0 +1,3 @@
+USE `PlatziBlog`;
+ALTER TABLE `People`
+CHANGE COLUMN `DateOfBirth` `DateOfBirth` NVARCHAR(30) NULL DEFAULT NULL;
