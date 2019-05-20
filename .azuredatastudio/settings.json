@@ -1,0 +1,11 @@
+{
+    "editor.renderWhitespace": "boundary",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableCommitSigning": true,
+    "markdown.preview.fontSize": 13.5,
+    "terminal.integrated.fontSize": 13.5,
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Iosevka Term",
+    "resultsGrid.fontSize": 11
+}
