@@ -1,0 +1,1 @@
+DROP TABLE `PlatziBlog`.`People`;
