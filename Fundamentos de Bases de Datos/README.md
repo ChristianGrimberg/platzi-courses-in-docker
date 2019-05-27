@@ -1,4 +1,4 @@
-# Fundamentos de Bases de Datos
+![Fundamentos de Bases de Datos](../images/Fundamentos-Bases-de-Datos.png)
 ## Configuración del entorno de trabajo con Docker
 Desde la terminal de comandos, se debe acceder al directorio docker contenido aquí, y para generar la imagen a utilizar por el contenedor se efectúa de la siguiente forma:
 ```bash
