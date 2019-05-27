@@ -60,3 +60,36 @@ ADD CONSTRAINT `PostsCategorias`
     REFERENCES `PlatziBlog`.`Categorias` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION;
+
+USE `PlatziBlog`;
+CREATE TABLE `Comentarios` (
+    `Id` INT NOT NULL AUTO_INCREMENT
+    ,`CuerpoComentario` TEXT NOT NULL
+    ,`UsuarioId` INT NOT NULL
+    ,`PostId` INT NOT NULL
+    ,PRIMARY KEY (`Id`)
+);
+
+USE `PlatziBlog`;
+ALTER TABLE `Comentarios`
+ADD INDEX `ComentariosUsuariosIdx` (`UsuarioId` ASC);
+
+USE `PlatziBlog`;
+ALTER TABLE `Comentarios`
+ADD CONSTRAINT `ComentariosUsuarios`
+    FOREIGN KEY (`UsuarioId`)
+    REFERENCES `PlatziBlog`.`Usuarios` (`Id`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+
+USE `PlatziBlog`;
+ALTER TABLE `Comentarios`
+ADD INDEX `PostsComentariosIdx` (`PostId` ASC);
+
+USE `PlatziBlog`;
+ALTER TABLE `Comentarios`
+ADD CONSTRAINT `ComentariosPosts`
+    FOREIGN KEY (`PostId`)
+    REFERENCES `PlatziBlog`.`Posts` (`Id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE;
