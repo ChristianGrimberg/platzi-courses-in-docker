@@ -13,3 +13,19 @@ Para bajar el contenedor (_importante! se borran los datos al salir_):
 ```bash
 docker-compose down
 ```
+## Prácticas de Clases
+### Data Definition Language
+Comprende los comandos estanadarizados de SQL que definen una base de datos:
+* CREATE
+* ALTER
+* DROP
+### Data Manipulation Language
+Son aquellos comandos del estándar SQL para la manipulación de los datos:
+* SELECT
+* INSERT
+* UPDATE
+* DELETE
+### Proyecto PlatziBlog
+El curso propone realizar un proyecto de un Blog, según el siguiente análisis de Diagrama de Entidad-Relación:
+
+![Diagrama PlatziBlog](../images/Diagrama-PlatziBlog.png)
