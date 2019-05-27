@@ -1,0 +1,26 @@
+CREATE DATABASE `PlatziBlog` DEFAULT CHARACTER SET UTF8;
+
+USE `PlatziBlog`;
+CREATE TABLE `Categorias` (
+    `Id` INT NOT NULL AUTO_INCREMENT
+    ,`Nombre` NVARCHAR(30) NOT NULL
+    ,PRIMARY KEY (`Id`)
+);
+
+USE `PlatziBlog`;
+CREATE TABLE `Etiquetas` (
+    `Id` INT NOT NULL AUTO_INCREMENT
+    ,`Nombre` NVARCHAR(30) NOT NULL
+    ,PRIMARY KEY (`Id`)
+);
+
+USE `PlatziBlog`;
+CREATE TABLE `Usuarios` (
+    `Id` INT NOT NULL AUTO_INCREMENT
+    ,`Login` NVARCHAR(30) NOT NULL
+    ,`Password` NVARCHAR(32) NOT NULL
+    ,`NickName` NVARCHAR(40) NOT NULL
+    ,`Email` NVARCHAR(40) NOT NULL
+    ,PRIMARY KEY (`Id`)
+    ,UNIQUE INDEX `Email_UNIQUE` (`Email` ASC)
+);
