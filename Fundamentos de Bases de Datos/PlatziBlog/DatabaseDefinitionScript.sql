@@ -93,3 +93,35 @@ ADD CONSTRAINT `ComentariosPosts`
     REFERENCES `PlatziBlog`.`Posts` (`Id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE;
+
+USE `PlatziBlog`;
+CREATE TABLE `PostsEtiquetas` (
+    `Id` INT NOT NULL AUTO_INCREMENT
+    ,`PostId` INT NOT NULL
+    ,`EtiquetaId` INT NOT NULL
+    ,PRIMARY KEY (`Id`)
+);
+
+USE `PlatziBlog`;
+ALTER TABLE `PostsEtiquetas`
+ADD INDEX `PostsEtiquetas_PostIdx` (`PostId` ASC);
+
+USE `PlatziBlog`;
+ALTER TABLE `PostsEtiquetas`
+ADD CONSTRAINT `PostsEtiquetasPost`
+    FOREIGN KEY (`PostId`)
+    REFERENCES `PlatziBlog`.`Posts` (`Id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE;
+
+USE `PlatziBlog`;
+ALTER TABLE `PostsEtiquetas`
+ADD INDEX `PostsEtiquetas_EtiquetaIdx` (`EtiquetaId` ASC);
+
+USE `PlatziBlog`;
+ALTER TABLE `PostsEtiquetas`
+ADD CONSTRAINT `PostsEtiquetasEtiqueta`
+    FOREIGN KEY (`EtiquetaId`)
+    REFERENCES `PlatziBlog`.`Etiquetas` (`Id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE;

@@ -28,6 +28,14 @@ Son aquellos comandos del estándar SQL para la manipulación de los datos:
 * UPDATE
 * DELETE
 ### Proyecto PlatziBlog
-El curso propone realizar un proyecto de un Blog, según el siguiente análisis de Diagrama de Entidad-Relación:
+El curso propone realizar un proyecto de un Blog, según el siguiente análisis de Diagrama de Entidad-Relación de Tablas Independientes y Dependietes con esquema de relación uno a uno o uno a muchos:
 
-![Diagrama PlatziBlog](../images/Diagrama-PlatziBlog.png)
+![Diagrama ER Independiete/Dependiente](../images/Diagrama-ER-Independiente-Dependiente.png)
+
+A su vez se presenta el escenario de las Tablas Transitivas que sirven de nexo para lograr relaciones de mucho a muchos:
+
+![Diagrama ER Transitivo](../images/Diagrama-ER-Transitivo.png)
+
+Al finalizar el proyecto DDL de PlatziBlog, se puede obtener el Diagrama Entidad Relacion provisto por la funciionalidad de ingeniería inversa de MySQL Workbench:
+
+![Diagrama ER MySQL Workbench](../images/Diagrama-ER-MySQL-Workbench.png)
