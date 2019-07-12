@@ -13,6 +13,12 @@
 ## Prácticas de Clases
 El material realizado en cada clase se puede correr dentro del contenedor de la imagen `bash-shell:platzi` realizando los siguientes comandos de Docker:
 ### Clase 5
-```bash
-docker run -it --rm --name bash-shell bash-shell:platzi /bin/bash ./usr/local/courses/shell/1_utility_postgres.sh
-```
+    Ejecutar nuestro script con un nombre único:
+    ```bash
+    docker run -it --rm --name bash-shell bash-shell:platzi /bin/bash ./usr/local/courses/shell/1_utility_postgres.sh
+    ```
+### Clase 6
+    Declaración de Variables y Alcance en Bash Shell:
+    ```bash
+    docker run -it --rm --name bash-shell bash-shell:platzi /bin/bash ./usr/local/courses/shell/2_variables.sh
+    ```

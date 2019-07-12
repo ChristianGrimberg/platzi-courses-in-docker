@@ -1,4 +1,4 @@
 # !/bin/bash
 # Primer programa en Bash
 
-echo "Hola, bienvenido al curso de Programacion en Bash Shell."
+echo "Hola, bienvenido al curso de Programación en Bash Shell."
