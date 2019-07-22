@@ -27,3 +27,8 @@ El material realizado en cada clase se puede correr dentro del contenedor de la 
     ```bash
     docker run -it --rm --name bash-shell bash-shell:platzi /bin/bash ./usr/local/courses/shell/3_tipoOperadores.sh
     ```
+## Clase 8
+* Script con argumentos:
+    ```bash
+    docker run -it --rm --name bash-shell bash-shell:platzi /bin/bash ./usr/local/courses/shell/4_argumentos.sh "Programacion Bash" "18:00 a 22:00"
+    ```
