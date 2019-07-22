@@ -37,3 +37,9 @@ El material realizado en cada clase se puede correr dentro del contenedor de la 
     ```bash
     docker run -it --rm --name bash-shell bash-shell:platzi /bin/bash ./usr/local/courses/shell/5_comandos.sh
     ```
+## Clase 10:
+* Depuración con Bash Shell
+    ```bash
+    docker run -it --rm --name bash-shell bash-shell:platzi /bin/bash -v ./usr/local/courses/shell/1_utility_postgres.sh
+    docker run -it --rm --name bash-shell bash-shell:platzi /bin/bash -x ./usr/local/courses/shell/5_comandos.sh
+    ```
