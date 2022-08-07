@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  testdb:
+    image: "mysql:platzi"
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=Platzi123456
+    ports:
+      - "0.0.0.0:3306:3306"
+    command: ["mysqld"]
